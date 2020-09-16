@@ -1,0 +1,18 @@
+               ------------------------------------------------------
+               |                Sharing IP Address                  |
+               |                Using Custom Hostnames              |
+               |                                                    |
+               |      API Gateway                    Legacy Code    |
+               |       w/auth                                       |
+  Curl --->    |     -------------                  -------------   |
+               | --> |           |                  |           |   |
+               |     |  Flask    | Calls Web page   |  PHP      |   |
+               |     |           |    ------>       |           |   |
+               |     |  python.  |                  | php.local |   |
+               |     |  local    |                  |           |   |    
+               |     -------------                  -------------   |
+               |                   127.0.0.1                        |
+               ------------------------------------------------------
+
+
+curl localhost/api/techs -> Flask - route api/techs -> php.local/techs/legacy_list.php
