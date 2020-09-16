@@ -18,7 +18,8 @@ spec:
   containers:
   -
     name:  php      # name of container
-    image: reg.alta3.com/3245-gottreu-php-api      # image to use if no URL provided hub.docker.com is used
+    # You'll need to push your images somewhere to use here.
+    image:   # image to use if no URL provided hub.docker.com is used
     ports:
      -
        name: http     # port name
@@ -26,7 +27,8 @@ spec:
        protocol:  TCP         # TCP or UDP
   -
     name:  python      # name of container
-    image:  reg.alta3.com/3245-gottreu-python-api      # image to use if no URL provided hub.docker.com is used
+    # I added vim, ping & curl to use while I was debugging the container.
+    image:        # image to use if no URL provided hub.docker.com is used
     ports:
      -
        name: http     # port name
